@@ -1,0 +1,23 @@
+Git ist ein Versionskontrollsystem. Es merkt sich jede Änderung an deinen Dateien, damit du jederzeit zurückspringen kannst.
+Wichtige Git‑Befehle:
+git init — Erstellt ein neues Git‑Projekt (Repository) im aktuellen Ordner.
+git status — Zeigt an, welche Dateien geändert wurden.
+git add — Markiert alle Änderungen, die gespeichert werden sollen.
+git commit — Speichert die Änderungen dauerhaft mit einer Nachricht. Bsp: git commit -m "Mein erster Commit"
+
+GitHub ist eine Online‑Plattform, auf der du deine Git‑Projekte speichern kannst. Du kannst dort mit anderen zusammenarbeiten, Dateien teilen und Projekte veröffentlichen.
+
+Ein Repository (Repo) ist einfach ein Projektordner, der von Git verwaltet wird. Es kann lokal auf deinem Computer sein oder online auf GitHub.
+
+SSH ist eine sichere Verbindung zwischen deinem Computer und GitHub. Damit kannst du ohne Passwort Dateien hochladen.
+
+SSH‑Schlüssel erstellen: ssh-keygen -t ed25519 -C "deine_email@example.com"
+SSH‑Schlüssel anzeigen: cat ~/.ssh/id_ed25519.pub. (Diesen Schlüssel kopierst du später in GitHub.)
+
+Push bedeutet: Schicke deine lokalen Änderungen zu GitHub. 
+Typischer Ablauf: Änderungen machen-> Dateien hinzufügen mit "git add ..." 
+
+Commit erstellen: git commit -m "Beschreibung der Änderung". 
+Zu GitHub hochladen:  git push
+ls: ist für die Auflistung einen Ordner wo man sich befindet
+
