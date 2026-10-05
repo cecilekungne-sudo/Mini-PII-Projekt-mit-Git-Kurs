@@ -4,6 +4,8 @@ git init — Erstellt ein neues Git‑Projekt (Repository) im aktuellen Ordner.
 git status — Zeigt an, welche Dateien geändert wurden.
 git add — Markiert alle Änderungen, die gespeichert werden sollen.
 git commit — Speichert die Änderungen dauerhaft mit einer Nachricht. Bsp: git commit -m "Mein erster Commit"
+git clone bedeutet: "Kopiere ein Repository von GitHub auf deinen Computer."
+git log zeigt die Geschichte (Historie) aller Commits in einem Repository an.
 
 GitHub ist eine Online‑Plattform, auf der du deine Git‑Projekte speichern kannst. Du kannst dort mit anderen zusammenarbeiten, Dateien teilen und Projekte veröffentlichen.
 
@@ -20,6 +22,7 @@ Typischer Ablauf: Änderungen machen-> Dateien hinzufügen mit "git add ..."
 Commit erstellen: git commit -m "Beschreibung der Änderung". 
 Zu GitHub hochladen:  git push
 ls: ist die Aufflistung alles Dateien von der Ordner wo man sich befinden.
+
 
 
 
