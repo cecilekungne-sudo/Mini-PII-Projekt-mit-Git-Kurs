@@ -19,5 +19,7 @@ Typischer Ablauf: Änderungen machen-> Dateien hinzufügen mit "git add ..."
 
 Commit erstellen: git commit -m "Beschreibung der Änderung". 
 Zu GitHub hochladen:  git push
-ls: ist für die Auflistung einen Ordner wo man sich befindet
+ls: ist die Aufflistung alles Dateien von der Ordner wo man sich befinden.
+
+
 
