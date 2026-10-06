@@ -11,7 +11,7 @@ from datetime import datetime
 import requests
 
 
-# Adresse von unserem Processor
+# Adresse von unserem Edge Processor
 processor_url = "http://127.0.0.1:5000/data"
 
 
@@ -31,16 +31,29 @@ while True:
 
         # Sicherheit der Erkennung: 92 %
         "confidence": 0.92
+
     }
 
-    # Die Daten werden weiterhin im Terminal angezeigt
+    # Die Daten im Terminal anzeigen
     print(json.dumps(data, indent=2))
 
-    # Die Daten werden an den Processor gesendet
-    response = requests.post(processor_url, json=data)
+    try:
 
-    # Wir zeigen die Antwort des Processors an
-    print("Antwort vom Processor:", response.json())
+        # Die Daten an den Edge Processor senden
+        response = requests.post(
+            processor_url,
+            json=data,
+            timeout=5
+        )
 
-    # Wir warten 3 Sekunden
+        # Antwort des Edge Processors anzeigen
+        print("Antwort vom Processor:", response.json())
+
+    except requests.exceptions.RequestException as error:
+
+        # Falls der Edge nicht erreichbar ist
+        print("Edge Processor nicht erreichbar!")
+        print(error)
+
+    # 3 Sekunden warten
     time.sleep(3)
